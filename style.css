@@ -1,3 +1,4 @@
+
 html, body {
     margin: 10;
     padding: 10;
@@ -34,5 +35,31 @@ html, body {
 .pacman {
     background-color: orange;
     border-radius: 7.5px;
+    border: none;
+}
+
+
+.blinky {
+    background-color: red;
+    border: none;
+}
+
+.pinky {
+    background-color: pink;
+    border: none;
+}
+
+.inky {
+    background-color: aqua;
+    border: none;
+}
+
+.clyde {
+    background-color: orange;
+    border: none;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
     border: none;
 }
