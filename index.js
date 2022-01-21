@@ -66,6 +66,8 @@ function createBoard() {
         else if (layout[i] === 3) 
             squares[i].classList.add('power-pellet')
         
+        else if (layout[i] === 4) 
+            squares[i].classList.add('empty')
         
     }
 }
@@ -143,6 +145,9 @@ function pacDotEaten() {
     if (squares[pacmanCurrentIndex].classList.contains('pac-dot')) {
 
         squares[pacmanCurrentIndex].classList.remove('pac-dot')
+
+        squares[pacmanCurrentIndex].classList.add('emp')
+
         //incrementing score
         score++
         scoreDisplay.innerHTML = score
@@ -278,7 +283,7 @@ function checkForGameOver() {
 
 
 function checkForWin() {
-    if (score === 10) {
+    if (score === 100) {
 
         //stop each ghost
         ghosts.forEach(ghost => clearInterval(ghost.timerId))

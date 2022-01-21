@@ -1,15 +1,33 @@
 
 html, body {
-    margin: 10;
-    padding: 10;
+   
+    /* background: #000; */
+    text-align: center;
+    justify-content: center;
+
 }
 
+.container{
+    max-width:800px;
+    width:100%;
+    margin: 0 auto;
+    /* background: red; */
+    border: 2px solid white;
+   
+  
+    
+}
+
+
+
 .grid {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     width: 420px;
     height: 420px;
-    border: solid black;
+    border: solid #000;
+    background: #000;
 }
 
 .grid div {
@@ -18,25 +36,62 @@ html, body {
 }
 
 .pac-dot {
-    background-color: green;
-    border: 5px solid white;
+    background-color: #fff;
+    border: 6px solid #000;
     box-sizing: border-box;
 }
 
 .wall {
-    background-color: blue;
+    background: #0000ff;;
+    /* border: solid blue; */
 }
 
 .power-pellet {
-    background-color: green;
+    background: #fff;
     border-radius: 7.5px;
 }
 
+.empty, .ghost-lair{
+    background: #000;
+    
+}
 .pacman {
-    background-color: orange;
+    background: #f2d648;
     border-radius: 7.5px;
     border: none;
+  
 }
+/* pac man trial*/
+.pacaman {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    background: #f2d648;
+    position: relative;
+    margin-top: 20px;
+  }
+.pacman-eye {
+    background: #000;
+    width:2px;
+    height:2px;
+    border-radius: 50%;
+    position:absolute;
+    top:2px;
+    right: 4px;
+}
+.pacman-mouth {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+
+
+
+
+
 
 
 .blinky {
@@ -63,3 +118,13 @@ html, body {
     background-color: aquamarine;
     border: none;
 }
+
+/* buttons */
+
+button{
+    padding:1em 2em ;
+    color:red;
+    display:none
+}
+
+
