@@ -1,15 +1,62 @@
 
-html, body {
-    margin: 10;
-    padding: 10;
+body {
+   
+    background: #000;
+    text-align: center;
+    color:#ff0000;
+    letter-spacing: 5px;
+
 }
 
+.container{
+    max-width:800px;
+    width:100%;
+    margin: 0 auto;   
+}
+
+/* text */
+h1,
+h3,
+button{
+    font-family: 'Acme', sans-serif;
+
+}
+
+h1{
+    font-size: 80px;
+    color:#ffc300;
+    margin:0;
+    padding: 20px 0 10px;
+
+}
+h3{
+    font-size:40px; 
+    margin:0 0 15px;
+}
+#result{
+    color:none;
+}
+button {
+    padding:12px 35px;
+    margin:10px 0 24px;
+    border:none;
+    display: none;
+
+    font-size: 22px;
+    font-weight:900;
+    background: #ffc300;
+}
+
+
 .grid {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+
     width: 420px;
     height: 420px;
-    border: solid black;
+
+    background: #000;
 }
 
 .grid div {
@@ -18,48 +65,57 @@ html, body {
 }
 
 .pac-dot {
-    background-color: green;
-    border: 5px solid white;
+    background-color: #fff;
+    border: 6px solid #000;
     box-sizing: border-box;
 }
 
 .wall {
-    background-color: blue;
+    background: #0000ff;;
+
 }
 
 .power-pellet {
-    background-color: green;
+    background: #fff;
     border-radius: 7.5px;
 }
 
+.empty, .ghost-lair{
+    background: #000;
+    
+}
 .pacman {
-    background-color: orange;
+    background: #f2d648;
     border-radius: 7.5px;
     border: none;
+  
 }
-
+.blinky,
+.pinky,
+.inky,
+.clyde,
+.scared-ghost{
+    border: none;
+}
 
 .blinky {
-    background-color: red;
-    border: none;
+    background-color: #ff0000;
 }
 
 .pinky {
-    background-color: pink;
-    border: none;
+    background-color: #ffc0cb;
 }
 
 .inky {
-    background-color: aqua;
-    border: none;
+    background-color: #00ffff;
 }
 
 .clyde {
-    background-color: orange;
-    border: none;
+    background-color: #ffa500;
 }
 
 .scared-ghost {
-    background-color: aquamarine;
-    border: none;
+    background-color: #00ff00;
 }
+
+
