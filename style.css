@@ -1,32 +1,61 @@
 
-html, body {
+body {
    
-    /* background: #000; */
+    background: #000;
     text-align: center;
-    justify-content: center;
+    color:#ff0000;
+    letter-spacing: 5px;
 
 }
 
 .container{
     max-width:800px;
     width:100%;
-    margin: 0 auto;
-    /* background: red; */
-    border: 2px solid white;
-   
-  
-    
+    margin: 0 auto;   
 }
 
+/* text */
+h1,
+h3,
+button{
+    font-family: 'Acme', sans-serif;
+
+}
+
+h1{
+    font-size: 80px;
+    color:#ffc300;
+    margin:0;
+    padding: 20px 0 10px;
+
+}
+h3{
+    font-size:40px; 
+    margin:0 0 15px;
+}
+#result{
+    color:none;
+}
+button {
+    padding:12px 35px;
+    margin:10px 0 24px;
+    border:none;
+    display: none;
+
+    font-size: 22px;
+    font-weight:900;
+    background: #ffc300;
+}
 
 
 .grid {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+
     width: 420px;
     height: 420px;
-    border: solid #000;
+
     background: #000;
 }
 
@@ -43,7 +72,7 @@ html, body {
 
 .wall {
     background: #0000ff;;
-    /* border: solid blue; */
+
 }
 
 .power-pellet {
@@ -61,70 +90,32 @@ html, body {
     border: none;
   
 }
-/* pac man trial*/
-.pacaman {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-
-    background: #f2d648;
-    position: relative;
-    margin-top: 20px;
-  }
-.pacman-eye {
-    background: #000;
-    width:2px;
-    height:2px;
-    border-radius: 50%;
-    position:absolute;
-    top:2px;
-    right: 4px;
+.blinky,
+.pinky,
+.inky,
+.clyde,
+.scared-ghost{
+    border: none;
 }
-.pacman-mouth {
-    background: #000;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
-  }
-
-
-
-
-
-
 
 .blinky {
-    background-color: red;
-    border: none;
+    background-color: #ff0000;
 }
 
 .pinky {
-    background-color: pink;
-    border: none;
+    background-color: #ffc0cb;
 }
 
 .inky {
-    background-color: aqua;
-    border: none;
+    background-color: #00ffff;
 }
 
 .clyde {
-    background-color: orange;
-    border: none;
+    background-color: #ffa500;
 }
 
 .scared-ghost {
-    background-color: aquamarine;
-    border: none;
-}
-
-/* buttons */
-
-button{
-    padding:1em 2em ;
-    color:red;
-    display:none
+    background-color: #00ff00;
 }
 
 
